@@ -10,7 +10,7 @@
 #import "PSMTabBarControl.h"
 #import "PSMProgressIndicator.h"
 
-typedef enum PSMCloseButtonImageType : NSUInteger
+enum PSMCloseButtonImageType
 {
     PSMCloseButtonImageTypeStandard = 0,
     PSMCloseButtonImageTypeRollover,
@@ -18,13 +18,15 @@ typedef enum PSMCloseButtonImageType : NSUInteger
     PSMCloseButtonImageTypeDirty,
     PSMCloseButtonImageTypeDirtyRollover,
     PSMCloseButtonImageTypeDirtyPressed
-} PSMCloseButtonImageType;
+};
+typedef NSUInteger PSMCloseButtonImageType;
 
-typedef enum PSMTabBarCellTrackingAreaType : NSUInteger
+enum PSMTabBarCellTrackingAreaType
 {
     PSMTabBarCellTrackingAreaCellFrameType   = 0,
     PSMTabBarCellTrackingAreaCloseButtonType = 1
-} PSMTabBarCellTrackingAreaType;
+};
+typedef NSUInteger PSMTabBarCellTrackingAreaType;
 
 @interface PSMTabBarCell : NSActionCell {
 	// sizing

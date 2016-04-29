@@ -42,17 +42,19 @@
 @class PSMTabBarController;
 @protocol PSMTabStyle;
 
-typedef enum PSMTabBarOrientation : NSUInteger {
+enum PSMTabBarOrientation {
 	PSMTabBarHorizontalOrientation,
 	PSMTabBarVerticalOrientation
-} PSMTabBarOrientation;
+};
+typedef NSUInteger PSMTabBarOrientation;
 
-typedef enum PSMTabBarTearOffStyle : NSUInteger {
+enum PSMTabBarTearOffStyle {
 	PSMTabBarTearOffAlphaWindow,
 	PSMTabBarTearOffMiniwindow
-} PSMTabBarTearOffStyle;
+};
+typedef NSUInteger PSMTabBarTearOffStyle;
 
-typedef enum PSMTabStateMask : NSUInteger {
+enum PSMTabStateMask {
 	PSMTab_SelectedMask				= 1 << 1,
 	PSMTab_LeftIsSelectedMask		= 1 << 2,
 	PSMTab_RightIsSelectedMask		= 1 << 3,
@@ -60,7 +62,8 @@ typedef enum PSMTabStateMask : NSUInteger {
 	PSMTab_PositionMiddleMask		= 1 << 5,
 	PSMTab_PositionRightMask		= 1 << 6,
 	PSMTab_PositionSingleMask		= 1 << 7,
-} PSMTabStateMask;
+};
+typedef NSUInteger PSMTabStateMask;
 
 @protocol PSMTabBarControlDelegate;
 
